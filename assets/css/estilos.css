@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&family=Monoton&display=swap');
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorPrincipal: #B0413E;
+    --colorPrincipalClaro: #D58986;
+    --colorPrincipalOscuro: #2D1110;
+    --colorClaro: #f6f6f6;
+    --colorRojo: #ef5b6f
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: var(--colorClaro);
+}
+
+.HeaderPrincipal {
+    background-color: var(--colorPrincipal);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.LogoHeader {
+    width: 5em;
+    filter: grayscale(100) brightness(100);
+}
+
+.BuscadorHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.BuscadorHeader input {
+    padding: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 20vw;
+    min-width: 250px;
+}
+
+
+.BuscadorHeader a {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: var(--colorPrincipalOscuro);
+    height: 40px;
+    width: 50px;
+    padding: 12px;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease-out;
+}
+
+.BuscadorHeader a:hover {
+    background-color: var(--colorPrincipalClaro);
+}
+
+.CarritoHeader a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 15px;
+    background-color: var(--colorPrincipalOscuro);
+    height: 40px;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+}
+
+.CarritoHeader svg {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-out;
+}
+
+.CarritoHeader p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.CarritoHeader a:hover {
+    background-color: var(--colorPrincipalClaro);
+}
+
+.CarritoHeader:hover svg {
+    transform: rotate(-10deg);
+}
+
+.HeaderSecundario {
+    background-color: var(--colorPrincipalClaro);
+    padding: 20px;
+}
+
+.HeaderSecundario nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.HeaderSecundario nav a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.HeaderSecundario nav a:hover {
+    color: var(--colorPrincipalOscuro)
+}
+
+h2 {
+    font-family: 'Monoton', cursive;
+}
+
+
+.btn-exterior-colorPrincipal {
+    border-color: #f20df2;
+    color: #f20df2;
+}
+
+.btn-exterior-colorPrincipal:hover {
+    background-color: #f20df2;
+    color: #fff
+}
+
+.text-colorBlanco {
+    color: #fff
+}
+
+.footer-links {
+    color: #fff;
+}
+
+.footer-links a:hover {
+    color: #f20df2;
+    text-decoration: underline;
+}
+
+.footer-icons i:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}

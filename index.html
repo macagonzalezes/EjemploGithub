@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint Final M6</title>
+    <meta name="description" content="Ultimo trabajo del módulo 6">
+    <meta name="keywords" content="sprint, final,modulo, desarrollo, web">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+    <header>
+
+        <section class="HeaderPrincipal">
+            <article>
+                <a href="index.html">
+                <img class="LogoHeader" src="assets/img/logotipo.png" alt="logotipo">
+            </a>
+            </article>
+            <article class="BuscadorHeader"> 
+                <input type="text" placeholder="Buscar">
+                <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                </a>
+            </article>
+            <article class="CarritoHeader"> 
+                <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+            </a> 
+            </article> 
+        </section>
+        <section class="HeaderSecundario">  
+            <nav> 
+                <a href="productos.html">Limpieza de ropa</a>
+                <a href="productos.html">Cuidado personal</a>
+                <a href="productos.html">Limpieza de pisos</a>
+                <a href="productos.html">Baño y cocina</a>
+                <a href="productos.html">Alfombras</a>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div id="sliderMaca" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#sliderMaca" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#sliderMaca" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#sliderMaca" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#sliderMaca" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/650B9168-132E-46B8-A48E-3E371DED7E7E.png" class="d-block w-100"
+                            alt="Producto destacado">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/650B9168-132E-46B8-A48E-3E371DED7E7E.png" class="d-block w-100"
+                            alt="Cyber Day">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/650B9168-132E-46B8-A48E-3E371DED7E7E.png" class="d-block w-100"
+                            alt="Liquidación">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/650B9168-132E-46B8-A48E-3E371DED7E7E.png" class="d-block w-100"
+                            alt="Ofertas">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#sliderMaca" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#sliderMaca" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <section class="my-5 px-5">
+                <h2 class="text-center">Limpieza</h2>
+                <article class="row py-3 mx-0 g-2">
+                    <div class="mx-auto mb-3 col-10 col-md-4 col-xl-2">
+                        <div class="card shadow rounded-4 overflow-hidden">
+                            <img src="assets/img/limpieza1.jpg" class="card-img-top mt-3 px-3" alt="Cloro clorinda">
+                            <div class="card-body">
+                                <h6 class="card-title text-danger mb-0"><del>$8.350</del></h6>
+                                <h5 class="card-title text-colorPrincipal mb-3 ms-2">$6.490</h5>
+                                <p class="card-text mb-0">Clorinda</p>
+                                <h5 class="card-title">Cloro</h5>
+                                <div class="d-grid mt-4">
+                                    <a href="#" class="btn btn-exterior-colorPrincipal rounded-pill">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto mb-3 col-10 col-md-4 col-xl-2">
+                        <div class="card shadow rounded-4 overflow-hidden">
+                            <img src="assets/img/limpieza2.jpg" class="card-img-top mt-3 px-3" alt="Cif Crema">
+                            <div class="card-body">
+                                <h6 class="card-title text-danger mb-0"><del>$5.350</del></h6>
+                                <h5 class="card-title text-colorPrincipal mb-3 ms-2">$3.490</h5>
+                                <p class="card-text mb-0">Cif Crema</p>
+                                <h5 class="card-title">Limpiador</h5>
+                                <div class="d-grid mt-4">
+                                    <a href="#" class="btn btn-exterior-colorPrincipal rounded-pill">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto mb-3 col-10 col-md-4 col-xl-2">
+                        <div class="card shadow rounded-4 overflow-hidden">
+                            <img src="assets/img/limpieza3.png" class="card-img-top mt-3 px-3" alt="Omo">
+                            <div class="card-body">
+                                <h6 class="card-title text-danger mb-0"><del>$9.350</del></h6>
+                                <h5 class="card-title text-colorPrincipal mb-3 ms-2">$2.490</h5>
+                                <p class="card-text mb-0">OMO</p>
+                                <h5 class="card-title">Detergente</h5>
+                                <div class="d-grid mt-4">
+                                    <a href="#" class="btn btn-exterior-colorPrincipal rounded-pill">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto mb-3 col-10 col-md-4 col-xl-2">
+                        <div class="card shadow rounded-4 overflow-hidden">
+                            <img src="assets/img/limpieza4.png" class="card-img-top mt-3 px-3" alt="Quix">
+                            <div class="card-body">
+                                <h6 class="card-title text-danger mb-0"><del>$2.350</del></h6>
+                                <h5 class="card-title text-colorPrincipal mb-3 ms-2">$1.490</h5>
+                                <p class="card-text mb-0">Quix</p>
+                                <h5 class="card-title">Lavalozas</h5>
+                                <div class="d-grid mt-4">
+                                    <a href="#" class="btn btn-exterior-colorPrincipal rounded-pill">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto mb-3 col-10 col-md-4 col-xl-2">
+                        <div class="card shadow rounded-4 overflow-hidden">
+                            <img src="assets/img/limpieza5.jpg" class="card-img-top mt-3 px-3" alt="Soft">
+                            <div class="card-body">
+                                <h6 class="card-title text-danger mb-0"><del>$12.350</del></h6>
+                                <h5 class="card-title text-colorPrincipal mb-3 ms-2">$1.490</h5>
+                                <p class="card-text mb-0">Soft</p>
+                                <h5 class="card-title">Suavizante</h5>
+                                <div class="d-grid mt-4">
+                                    <a href="#" class="btn btn-exterior-colorPrincipal rounded-pill">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto mb-3 col-10 col-md-4 col-xl-2">
+                        <div class="card shadow rounded-4 overflow-hidden">
+                            <img src="assets/img/limpieza6.jpg" class="card-img-top mt-3 px-3" alt="Ariel">
+                            <div class="card-body">
+                                <h6 class="card-title text-danger mb-0"><del>$8.390</del></h6>
+                                <h5 class="card-title text-colorPrincipal mb-3 ms-2">$6.290</h5>
+                                <p class="card-text mb-0">Ariel</p>
+                                <h5 class="card-title">Detergente</h5>
+                                <div class="d-grid mt-4">
+                                    <a href="#" class="btn btn-exterior-colorPrincipal rounded-pill">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="bg-primary">
+                <h2 class="text-center text-colorBlanco">Productos destacados</h2>
+                <article class="row col-6 mx-auto d-flex justify-content">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarText">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Detergente<span class="sr-only"></span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Lavaloza</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Desengrasante</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Limpiavidrio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Lustramueble</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Desinfectante</a>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </article>
+                <article class="row mt-3 col-9 mx-auto">
+                    <div class="card-group">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/limpieza1.jpg" alt="Cloro clorinda">
+                            <div class="card-body">
+                                <h5 class="card-title">Cloro Clorinda</h5>
+                                <p class="card-text">Elimina Gérmenes y Bacterias en baños y cocina. Poder
+                                    desinfectante, limpiador y blanqueador. Efectivo contra manchas y bacterias.</p>
+                                <p class="card-text"><small class="text-muted">Mantener fuera del alcance de los
+                                        niños</small></p>
+                                <a href="#" class="btn btn-exterior-colorPrincipal rounded-pill">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/limpieza2.jpg" alt="Cif Crema">
+                            <div class="card-body">
+                                <h5 class="card-title">Cif Crema</h5>
+                                <p class="card-text">Limpiador multiuso cremoso con micropartículas de origen natural.
+                                    Ideal para una limpieza profunda. Apto para todas las superficies</p>
+                                <p class="card-text"><small class="text-muted">Mantener fuera del alcance de los
+                                        niños.</small></p>
+                                <a href="#" class="btn btn-exterior-colorPrincipal rounded-pill">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/limpieza3.png" alt="OMO">
+                            <div class="card-body">
+                                <h5 class="card-title">OMO</h5>
+                                <p class="card-text">Remoción insuperable de manchas. Fórmula exclusiva con agentes
+                                    biodegradables y fragancia duradera para tu ropa.</p>
+                                <p class="card-text"><small class="text-muted">Mantener fuera del alcance de los
+                                        niños</small></p>
+                                <a href="#" class="btn btn-exterior-colorPrincipal rounded-pill">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+    </main>
+    <footer class="footer-links bg-secondary">
+        <section class="container-fluid pt-5 pb-2">
+            <article class="row row-cols-1 row-cols-md-2 row-cols-lg-4 text-center text-light">
+                <div class="col mb-5 mb-lg-0">
+                    <h4 class="mb-4">CATEGORÍAS</h4>
+                    <a class="nav-link mb-2" href="">Lavado de ropa</a>
+                    <a class="nav-link mb-2" href="">Cocina y baño</a>
+                    <a class="nav-link mb-2" href="">Pisos</a>
+                    <a class="nav-link" href="">Productos</a>
+                </div>
+                <div class="col mb-5 mb-lg-0">
+                    <h4 class="mb-4">SUPRAMARKET</h4>
+                    <a class="nav-link mb-2" href="">Información de pago</a>
+                    <a class="nav-link mb-2" href="">Proovedores</a>
+                    <a class="nav-link" href="">Acuerdos legales</a>
+                </div>
+                <div class="col mb-5 mb-lg-0">
+                    <h4 class="mb-4">DIRECCIÓN</h4>
+                    <a class="nav-link mb-2" href="">Sucursal Norte</a>
+                    <a class="nav-link mb-2" href="">Sucursal Centro </a>
+                    <a class="nav-link" href="">Sucursal Sur</a>
+                </div>
+                <div class="col footer-icons">
+                    <h4 class="mb-4">SÍGUENOS</h4>
+                    <a class="nav-link d-inline-block fs-3 mx-2" href=""><i class="bi bi-facebook"></i></a>
+                    <a class="nav-link d-inline-block fs-3 mx-2" href=""><i class="bi bi-instagram"></i></a>
+                    <a class="nav-link d-inline-block fs-3 mx-2" href=""><i class="bi bi-youtube"></i></a>
+                    <a class="nav-link d-inline-block fs-3 mx-2" href=""><i class="bi bi-twitter"></i></a>
+                </div>
+            </article>
+            <article class="text-center text-light mt-3 pt-3 border-top border-black">
+                <p>Creado por Macarena</p>
+            </article>
+        </section>
+    </footer>
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+
+</html>
